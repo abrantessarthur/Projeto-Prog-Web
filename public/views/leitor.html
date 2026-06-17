@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Painel do Leitor</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <h1>Painel do Leitor</h1>
+    <button onclick="logout()" class="btn-danger">Sair</button>
+
+    <h2>Catálogo de Livros Disponíveis</h2>
+    <table>
+        <thead>
+            <tr>
+                <th class="leitor-th">ID</th>
+                <th class="leitor-th">Título</th>
+                <th class="leitor-th">Autor</th>
+                <th class="leitor-th">Ano</th>
+                <th class="leitor-th">Disponíveis</th>
+                <th class="leitor-th">Ação</th>
+            </tr>
+        </thead>
+        <tbody id="catalogo-livros"></tbody>
+    </table>
+
+    <h2>Meus Empréstimos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th class="leitor-th">Livro ID</th>
+                <th class="leitor-th">Data Empréstimo</th>
+                <th class="leitor-th">Devolução Prevista</th>
+                <th class="leitor-th">Status</th>
+            </tr>
+        </thead>
+        <tbody id="meus-emprestimos"></tbody>
+    </table>
+
+    <script src="/js/leitor.js"></script>
+</body>
+</html>

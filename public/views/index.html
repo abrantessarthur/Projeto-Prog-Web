@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Biblioteca - Login</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <!-- Formulário de Registro -->
+        <div class="box">
+            <h2>Criar Conta</h2>
+            <form id="registro-form">
+                <div class="form-group">
+                    <label>Nome:</label>
+                    <input type="text" id="reg-nome" required>
+                </div>
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="email" id="reg-email" required>
+                </div>
+                <div class="form-group">
+                    <label>Senha:</label>
+                    <input type="password" id="reg-senha" required>
+                </div>
+                <div class="form-group">
+                    <label>Perfil:</label>
+                    <select id="reg-perfil">
+                        <option value="leitor">Leitor</option>
+                        <option value="bibliotecario">Bibliotecário</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">Registrar</button>
+            </form>
+        </div>
+
+        <!-- Formulário de Login -->
+        <div class="box">
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label>Senha:</label>
+                    <input type="password" id="login-senha" required>
+                </div>
+                <button type="submit" class="btn-primary">Entrar</button>
+                <div id="login-erro" class="error"></div>
+            </form>
+        </div>
+    </div>
+
+    <script src="/js/index.js"></script>
+</body>
+</html>
