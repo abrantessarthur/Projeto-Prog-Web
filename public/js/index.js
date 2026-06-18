@@ -5,8 +5,6 @@ document.getElementById('registro-form').addEventListener('submit', async (e) =>
     const senha = document.getElementById('reg-senha').value;
     const perfil = document.getElementById('reg-perfil').value;
 
-    // 🟢 Linhas do Node removidas daqui. O fetch abaixo já faz todo o trabalho!
-
     try {
         const res = await fetch('/api/usuarios', {
             method: 'POST',
@@ -25,7 +23,6 @@ document.getElementById('registro-form').addEventListener('submit', async (e) =>
     }
 });
 
-// Lógica de Login
 document.getElementById('login-form').addEventListener('submit', async (e) => {
     e.preventDefault();
     const email = document.getElementById('login-email').value;

@@ -6,25 +6,20 @@ const db = require('./db');
 
 app.use(express.json());
 
-// Servir arquivos estáticos da pasta public
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Rota principal - Serve o index.html que está na pasta views
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'views', 'index.html'));
 });
 
-// Importação das Rotas da API
 const usuariosRoutes = require('./routes/usuarios');
 const livrosRoutes = require('./routes/livros');
 const emprestimosRoutes = require('./routes/emprestimos');
 
-// Associação das Rotas da API
 app.use('/api/usuarios', usuariosRoutes);
 app.use('/api/livros', livrosRoutes);
 app.use('/api/emprestimos', emprestimosRoutes);
 
-// Endpoint de Login
 app.post('/api/login', (req, res) => {
     const { email, senha } = req.body;
     db.query(

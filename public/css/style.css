@@ -1,4 +1,3 @@
-/* Estilos Globais */
 body {
     font-family: Arial, sans-serif;
     margin: 30px;
@@ -49,7 +48,6 @@ button:hover {
     color: white;
 }
 
-/* Tabelas */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -73,7 +71,6 @@ th {
     background-color: #17a2b8;
 }
 
-/* Formulários */
 form {
     background: white;
     padding: 20px;
@@ -100,7 +97,6 @@ input, select {
     box-sizing: border-box;
 }
 
-/* Tela de Login Layout */
 .login-container {
     display: flex;
     gap: 50px;

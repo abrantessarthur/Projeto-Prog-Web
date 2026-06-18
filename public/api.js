@@ -1,12 +1,9 @@
-// formulário usuário
 const formUser = document.getElementById('user-form');
-// formulário livro
 const formLivro = document.getElementById('livro-form');
 const usuarioList = document.getElementById('usuario-list');
 const livroList = document.getElementById('livro-list');
 carregarUsuarios();
 carregarLivros();
-// cadastro do usuari
 formUser.addEventListener('submit', e => {
     e.preventDefault();
 
